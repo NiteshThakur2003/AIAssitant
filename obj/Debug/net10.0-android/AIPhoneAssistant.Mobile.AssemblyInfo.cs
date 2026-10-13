@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIPhoneAssistant.Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ec01dd96a8e05b9641cb8ecae2c0c926fb3fc280")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIPhoneAssistant.Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AIPhoneAssistant.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
