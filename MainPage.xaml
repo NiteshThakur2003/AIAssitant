@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AIPhoneAssistant.Mobile.MainPage"
+    Title="AI Phone Assistant"
+    BackgroundColor="#F1F5F9">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="20">
+
+            <Label
+                Text="AI Phone Assistant"
+                FontSize="27"
+                FontAttributes="Bold"
+                TextColor="#172554" />
+
+            <Label
+                Text="Your personal calling assistant"
+                FontSize="14"
+                TextColor="#64748B" />
+
+            <Border
+                BackgroundColor="White"
+                Stroke="#E2E8F0"
+                StrokeShape="RoundRectangle 20"
+                Padding="20">
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Label
+                        Text="Assistant Status"
+                        FontSize="19"
+                        FontAttributes="Bold"
+                        TextColor="#172554" />
+
+                    <Label
+                        x:Name="AssistantStatus"
+                        Text="Status: Assistant is inactive"
+                        TextColor="#64748B"
+                        FontSize="15" />
+
+                    <Button
+                        x:Name="AssistantButton"
+                        Text="Activate Assistant"
+                        Clicked="OnAssistantClicked"
+                        BackgroundColor="#2563EB"
+                        TextColor="White"
+                        CornerRadius="12" />
+
+                    <Button
+                        x:Name="CallScreeningButton"
+                        Text="Enable Call Screening"
+                        Clicked="OnEnableCallScreeningClicked"
+                        BackgroundColor="#0F766E"
+                        TextColor="White"
+                        CornerRadius="12" />
+
+                    <Button
+                        Text="Test Notification"
+                        Clicked="OnTestNotificationClicked"
+                        BackgroundColor="#A78BFA"
+                        TextColor="#172554"
+                        CornerRadius="12"
+                        Margin="0,4,0,0" />
+
+
+                    <Button
+    Text="Test Speech Recognition"
+    Clicked="OnTestSpeechClicked"
+    BackgroundColor="#2563EB"
+    TextColor="White"
+    CornerRadius="10" />
+
+
+                </VerticalStackLayout>
+            </Border>
+
+            <Label
+                Text="Call Overview"
+                FontSize="21"
+                FontAttributes="Bold"
+                TextColor="#172554" />
+
+            <Grid
+                ColumnDefinitions="*,*"
+                ColumnSpacing="12">
+
+                <Border
+                    Grid.Column="0"
+                    BackgroundColor="White"
+                    Stroke="#E2E8F0"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+
+                    <VerticalStackLayout Spacing="8">
+                        <Label
+                            Text="Recent Calls"
+                            TextColor="#64748B" />
+
+                        <Label
+                            x:Name="RecentCallsCount"
+                            Text="0"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            TextColor="#2563EB" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border
+                    Grid.Column="1"
+                    BackgroundColor="White"
+                    Stroke="#E2E8F0"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+
+                    <VerticalStackLayout Spacing="8">
+                        <Label
+                            Text="AI Summaries"
+                            TextColor="#64748B" />
+
+                        <Label
+                            x:Name="AISummariesCount"
+                            Text="0"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            TextColor="#7C3AED" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </Grid>
+
+            <Label
+                Text="Recent Activity"
+                FontSize="21"
+                FontAttributes="Bold"
+                TextColor="#172554" />
+
+            <Border
+                BackgroundColor="White"
+                Stroke="#E2E8F0"
+                StrokeShape="RoundRectangle 16"
+                Padding="18">
+
+                <Label
+                    x:Name="RecentActivityLabel"
+                    Text="No activity yet."
+                    FontSize="14"
+                    TextColor="#64748B" />
+
+            </Border>
+
+            <Frame Padding="16"
+       CornerRadius="12"
+       HasShadow="False"
+       BackgroundColor="White">
+
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Busy Mode"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="#1E293B" />
+
+                    <Label Text="ON: All callers eligible. OFF: Unknown callers only."
+               FontSize="14"
+               TextColor="#64748B" />
+
+                    <HorizontalStackLayout Spacing="12">
+                        <Switch x:Name="BusyModeSwitch"
+                    Toggled="BusyModeSwitch_Toggled" />
+
+                        <Label x:Name="BusyModeStatus"
+                   Text="Busy Mode OFF - Unknown callers only"
+                   VerticalOptions="Center"
+                   TextColor="#334155" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

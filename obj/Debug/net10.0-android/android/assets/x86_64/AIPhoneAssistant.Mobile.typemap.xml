@@ -1,0 +1,16 @@
+<api type="debug" assembly-name="AIPhoneAssistant.Mobile" mvid="0c704bd8178e48a4abf7e1e9cd68d017">
+  <java-to-managed>
+    <entry java-name="com/aiphoneassistant/mobile/AICallScreeningService" managed-name="AIPhoneAssistant.Mobile.AICallScreeningService, AIPhoneAssistant.Mobile" managed-type-token-id="33554442" />
+    <entry java-name="crc64664a628054110cf3/CallStateListener" managed-name="AIPhoneAssistant.Mobile.CallStateListener, AIPhoneAssistant.Mobile" managed-type-token-id="33554443" />
+    <entry java-name="crc64664a628054110cf3/MainActivity" managed-name="AIPhoneAssistant.Mobile.MainActivity, AIPhoneAssistant.Mobile" managed-type-token-id="33554444" />
+    <entry java-name="crc64664a628054110cf3/MainApplication" managed-name="AIPhoneAssistant.Mobile.MainApplication, AIPhoneAssistant.Mobile" managed-type-token-id="33554445" />
+    <entry java-name="crc6452b1523867eac858/AndroidSpeechService_SpeechListener" managed-name="AIPhoneAssistant.Mobile.Platforms.Android.AndroidSpeechService+SpeechListener, AIPhoneAssistant.Mobile" managed-type-token-id="33554461" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="com/aiphoneassistant/mobile/AICallScreeningService" managed-name="AIPhoneAssistant.Mobile.AICallScreeningService, AIPhoneAssistant.Mobile" managed-type-token-id="33554442" />
+    <entry java-name="crc64664a628054110cf3/CallStateListener" managed-name="AIPhoneAssistant.Mobile.CallStateListener, AIPhoneAssistant.Mobile" managed-type-token-id="33554443" />
+    <entry java-name="crc64664a628054110cf3/MainActivity" managed-name="AIPhoneAssistant.Mobile.MainActivity, AIPhoneAssistant.Mobile" managed-type-token-id="33554444" />
+    <entry java-name="crc64664a628054110cf3/MainApplication" managed-name="AIPhoneAssistant.Mobile.MainApplication, AIPhoneAssistant.Mobile" managed-type-token-id="33554445" />
+    <entry java-name="crc6452b1523867eac858/AndroidSpeechService_SpeechListener" managed-name="AIPhoneAssistant.Mobile.Platforms.Android.AndroidSpeechService+SpeechListener, AIPhoneAssistant.Mobile" managed-type-token-id="33554461" />
+  </managed-to-java>
+</api>
